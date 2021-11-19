@@ -18,10 +18,10 @@ namespace Calculator2
 
  
             Console.WriteLine("\nChoose an operator: [ + - / * ]");
-            ConsoleColor prevColor = Console.ForegroundColor;
-            Console.ForegroundColor = ConsoleColor.DarkGray;
+            ConsoleColor prevColor = Console.ForegroundColor; // Sparar nuvarande textfärg i variablen prevColor
+            Console.ForegroundColor = ConsoleColor.DarkGray; // Ändrar färgen på användarens input till darkgrey
             calculationMethod = Convert.ToChar(Console.ReadLine());
-            Console.ForegroundColor = prevColor;
+            Console.ForegroundColor = prevColor; // Byter tillbaka färgen på texten till prevColor
             Console.WriteLine("Enter a number: ");
             Console.ForegroundColor = ConsoleColor.DarkGray;
             num1 = Convert.ToInt32(Console.ReadLine());
