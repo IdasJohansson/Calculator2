@@ -20,7 +20,7 @@ namespace Calculator2
             Console.Write("Hello, enter your name: ");
 
             ConsoleColor prevColor = Console.ForegroundColor; // Sparar nuvarande textfärg i variablen prevColor
-            Console.ForegroundColor = ConsoleColor.DarkGray; // Byter färg på texten till DarkGray
+            Console.ForegroundColor = ConsoleColor.DarkGray; //  Ändrar färgen på användarens input till darkgrey
 
             string name = Console.ReadLine();
             Console.ForegroundColor = prevColor; // Byter tillbaka färgen på texten till prevColor
